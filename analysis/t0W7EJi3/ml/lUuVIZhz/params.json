@@ -313,7 +313,7 @@
   "modeling": {
     "skipExpensiveReports": false,
     "random_forest_regression": {
-      "enabled": false,
+      "enabled": true,
       "n_estimators": {
         "values": [
           100
