@@ -603,7 +603,7 @@
         "nValues": 0,
         "gridMode": "EXPLICIT"
       },
-      "enabled": true
+      "enabled": false
     },
     "lasso_regression": {
       "alphaMode": "AUTO_CV",
@@ -1207,7 +1207,7 @@
       "nJobs": 4
     },
     "metrics": {
-      "evaluationMetric": "R2",
+      "evaluationMetric": "MSE",
       "customEvaluationMetricGIB": true,
       "customEvaluationMetricNeedsProba": false,
       "costMatrixWeights": {
