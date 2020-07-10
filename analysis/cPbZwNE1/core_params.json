@@ -39,7 +39,41 @@
           ]
         },
         "metaType": "PROCESSOR",
-        "preview": true,
+        "preview": false,
+        "disabled": false,
+        "alwaysShowComment": false
+      },
+      {
+        "type": "FilterOnNumericalRange",
+        "params": {
+          "min": 0.0,
+          "max": 0.1162,
+          "action": "KEEP_ROW",
+          "booleanMode": "AND",
+          "appliesTo": "SINGLE_COLUMN",
+          "columns": [
+            "abs_diff_longitude"
+          ]
+        },
+        "metaType": "PROCESSOR",
+        "preview": false,
+        "disabled": false,
+        "alwaysShowComment": false
+      },
+      {
+        "type": "FilterOnNumericalRange",
+        "params": {
+          "min": 0.0,
+          "max": 0.1188,
+          "action": "KEEP_ROW",
+          "booleanMode": "AND",
+          "appliesTo": "SINGLE_COLUMN",
+          "columns": [
+            "abs_diff_latitude"
+          ]
+        },
+        "metaType": "PROCESSOR",
+        "preview": false,
         "disabled": false,
         "alwaysShowComment": false
       }
@@ -103,11 +137,11 @@
   "charts": [],
   "name": "Analyze train",
   "versionTag": {
-    "versionNumber": 17,
+    "versionNumber": 21,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1594379727245
+    "lastModifiedOn": 1594379866873
   },
   "creationTag": {
     "versionNumber": 0,
