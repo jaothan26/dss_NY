@@ -619,7 +619,7 @@
       "enabled": false
     },
     "leastsquare_regression": {
-      "enabled": false,
+      "enabled": true,
       "n_jobs": 2
     },
     "sgd_regression": {
@@ -1207,7 +1207,7 @@
       "nJobs": 4
     },
     "metrics": {
-      "evaluationMetric": "R2",
+      "evaluationMetric": "RMSE",
       "customEvaluationMetricGIB": true,
       "customEvaluationMetricNeedsProba": false,
       "costMatrixWeights": {
