@@ -1,12 +1,108 @@
 {
   "inputDatasetSmartName": "train_filtered",
   "script": {
-    "steps": [],
+    "steps": [
+      {
+        "type": "CreateColumnWithGREL",
+        "params": {
+          "column": "abs_diff_longitude",
+          "expression": "(dropoff_longitude - pickup_longitude).abs()"
+        },
+        "metaType": "PROCESSOR",
+        "preview": false,
+        "disabled": false,
+        "alwaysShowComment": false
+      },
+      {
+        "type": "CreateColumnWithGREL",
+        "params": {
+          "column": "abs_diff_latitude",
+          "expression": "(dropoff_latitude - pickup_latitude).abs()"
+        },
+        "metaType": "PROCESSOR",
+        "preview": false,
+        "disabled": false,
+        "alwaysShowComment": false
+      },
+      {
+        "type": "RemoveRowsOnEmpty",
+        "params": {
+          "keep": false,
+          "appliesTo": "SINGLE_COLUMN",
+          "columns": [
+            "dropoff_longitude"
+          ]
+        },
+        "metaType": "PROCESSOR",
+        "preview": false,
+        "disabled": false,
+        "alwaysShowComment": false
+      },
+      {
+        "type": "RemoveRowsOnEmpty",
+        "params": {
+          "keep": false,
+          "appliesTo": "SINGLE_COLUMN",
+          "columns": [
+            "dropoff_longitude"
+          ]
+        },
+        "metaType": "PROCESSOR",
+        "preview": false,
+        "disabled": false,
+        "alwaysShowComment": false
+      },
+      {
+        "type": "FilterOnNumericalRange",
+        "params": {
+          "min": 0.0,
+          "max": 0.113,
+          "action": "KEEP_ROW",
+          "booleanMode": "AND",
+          "appliesTo": "SINGLE_COLUMN",
+          "columns": [
+            "abs_diff_longitude"
+          ]
+        },
+        "metaType": "PROCESSOR",
+        "preview": false,
+        "disabled": false,
+        "alwaysShowComment": false
+      },
+      {
+        "type": "FilterOnNumericalRange",
+        "params": {
+          "min": 0.0,
+          "max": 0.1184,
+          "action": "KEEP_ROW",
+          "booleanMode": "AND",
+          "appliesTo": "SINGLE_COLUMN",
+          "columns": [
+            "abs_diff_latitude"
+          ]
+        },
+        "metaType": "PROCESSOR",
+        "preview": false,
+        "disabled": false,
+        "alwaysShowComment": false
+      }
+    ],
     "maxProcessedMemTableBytes": -1,
     "columnsSelection": {
       "mode": "ALL"
     },
-    "columnWidthsByName": {},
+    "columnWidthsByName": {
+      "key": 218,
+      "fare_amount": 100,
+      "pickup_datetime": 176,
+      "pickup_longitude": 162,
+      "pickup_latitude": 155,
+      "dropoff_longitude": 169,
+      "dropoff_latitude": 135,
+      "passenger_count": 128,
+      "abs_diff_longitude": 176,
+      "abs_diff_latitude": 169
+    },
     "coloring": {
       "scheme": "MEANING_AND_STATUS",
       "individualColumns": [],
@@ -40,7 +136,9 @@
       "autoRefreshSample": false,
       "_refreshTrigger": 0
     },
-    "exploreUIParams": {},
+    "exploreUIParams": {
+      "autoRefresh": true
+    },
     "globalSearchQuery": "",
     "explorationFilters": [],
     "previewMode": "ALL_ROWS"
@@ -48,11 +146,11 @@
   "charts": [],
   "name": "Analyze train_filtered",
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1594383138275
+    "lastModifiedOn": 1594383362582
   },
   "creationTag": {
     "versionNumber": 0,
