@@ -107,40 +107,6 @@
         "appliesTo": "SINGLE_COLUMN"
       },
       "alwaysShowComment": false
-    },
-    {
-      "preview": false,
-      "metaType": "PROCESSOR",
-      "disabled": false,
-      "type": "FilterOnNumericalRange",
-      "params": {
-        "min": 0.0,
-        "max": 0.1156,
-        "booleanMode": "AND",
-        "columns": [
-          "abs_diff_longitude"
-        ],
-        "action": "KEEP_ROW",
-        "appliesTo": "SINGLE_COLUMN"
-      },
-      "alwaysShowComment": false
-    },
-    {
-      "preview": false,
-      "metaType": "PROCESSOR",
-      "disabled": false,
-      "type": "FilterOnNumericalRange",
-      "params": {
-        "min": 0.0,
-        "max": 0.1256,
-        "booleanMode": "AND",
-        "columns": [
-          "abs_diff_latitude"
-        ],
-        "action": "KEEP_ROW",
-        "appliesTo": "SINGLE_COLUMN"
-      },
-      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,
