@@ -20,7 +20,97 @@
           "expression": "(dropoff_latitude - pickup_latitude).abs()"
         },
         "metaType": "PROCESSOR",
-        "preview": true,
+        "preview": false,
+        "disabled": false,
+        "alwaysShowComment": false
+      },
+      {
+        "type": "RemoveRowsOnEmpty",
+        "params": {
+          "keep": false,
+          "appliesTo": "SINGLE_COLUMN",
+          "columns": [
+            "dropoff_latitude"
+          ]
+        },
+        "metaType": "PROCESSOR",
+        "preview": false,
+        "disabled": false,
+        "alwaysShowComment": false
+      },
+      {
+        "type": "RemoveRowsOnEmpty",
+        "params": {
+          "keep": false,
+          "appliesTo": "SINGLE_COLUMN",
+          "columns": [
+            "dropoff_longitude"
+          ]
+        },
+        "metaType": "PROCESSOR",
+        "preview": false,
+        "disabled": false,
+        "alwaysShowComment": false
+      },
+      {
+        "type": "RemoveRowsOnEmpty",
+        "params": {
+          "keep": false,
+          "appliesTo": "SINGLE_COLUMN",
+          "columns": [
+            "abs_diff_longitude"
+          ]
+        },
+        "metaType": "PROCESSOR",
+        "preview": false,
+        "disabled": false,
+        "alwaysShowComment": false
+      },
+      {
+        "type": "RemoveRowsOnEmpty",
+        "params": {
+          "keep": false,
+          "appliesTo": "SINGLE_COLUMN",
+          "columns": [
+            "abs_diff_latitude"
+          ]
+        },
+        "metaType": "PROCESSOR",
+        "preview": false,
+        "disabled": false,
+        "alwaysShowComment": false
+      },
+      {
+        "type": "FilterOnNumericalRange",
+        "params": {
+          "min": 0.0,
+          "max": 0.1156,
+          "action": "KEEP_ROW",
+          "booleanMode": "AND",
+          "appliesTo": "SINGLE_COLUMN",
+          "columns": [
+            "abs_diff_longitude"
+          ]
+        },
+        "metaType": "PROCESSOR",
+        "preview": false,
+        "disabled": false,
+        "alwaysShowComment": false
+      },
+      {
+        "type": "FilterOnNumericalRange",
+        "params": {
+          "min": 0.0,
+          "max": 0.1256,
+          "action": "KEEP_ROW",
+          "booleanMode": "AND",
+          "appliesTo": "SINGLE_COLUMN",
+          "columns": [
+            "abs_diff_latitude"
+          ]
+        },
+        "metaType": "PROCESSOR",
+        "preview": false,
         "disabled": false,
         "alwaysShowComment": false
       }
@@ -37,7 +127,8 @@
       "dropoff_longitude": 169,
       "dropoff_latitude": 135,
       "passenger_count": 128,
-      "abs_diff_longitude": 176
+      "abs_diff_longitude": 176,
+      "abs_diff_latitude": 169
     },
     "coloring": {
       "scheme": "MEANING_AND_STATUS",
@@ -82,11 +173,11 @@
   "charts": [],
   "name": "Analyze test",
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 19,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1594364462012
+    "lastModifiedOn": 1594364956218
   },
   "creationTag": {
     "versionNumber": 0,
