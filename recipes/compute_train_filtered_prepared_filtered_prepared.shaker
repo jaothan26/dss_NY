@@ -25,7 +25,10 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "exploreUIParams": {},
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
   "steps": [],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
@@ -34,7 +37,18 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "dropoff_longitude": 169,
+    "fare_amount": 100,
+    "pickup_longitude": 162,
+    "pickup_latitude": 155,
+    "abs_diff_latitude": 169,
+    "pickup_datetime": 176,
+    "passenger_count": 128,
+    "abs_diff_longitude": 176,
+    "dropoff_latitude": 135,
+    "key": 218
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
