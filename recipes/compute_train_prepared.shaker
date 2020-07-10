@@ -1,0 +1,134 @@
+{
+  "columnsSelection": {
+    "mode": "ALL"
+  },
+  "explorationSampling": {
+    "_refreshTrigger": 0,
+    "selection": {
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "latestPartitionsN": 1,
+      "maxRecords": 10000,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
+      "withinFirstN": -1,
+      "partitionSelectionMethod": "ALL",
+      "maxStoredBytes": 104857600,
+      "targetRatio": 0.02,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "HEAD_SEQUENTIAL"
+    },
+    "autoRefreshSample": false
+  },
+  "explorationFilters": [],
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "(dropoff_longitude - pickup_longitude).abs()",
+        "column": "abs_diff_longitude"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "(dropoff_latitude - pickup_latitude).abs()",
+        "column": "abs_diff_latitude"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FilterOnBadType",
+      "params": {
+        "booleanMode": "AND",
+        "columns": [
+          "dropoff_longitude",
+          "dropoff_latitude",
+          "abs_diff_longitude",
+          "abs_diff_latitude"
+        ],
+        "action": "REMOVE_ROW",
+        "appliesTo": "COLUMNS",
+        "type": "DoubleMeaning"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FilterOnNumericalRange",
+      "params": {
+        "min": 0.0,
+        "max": 0.1162,
+        "booleanMode": "AND",
+        "columns": [
+          "abs_diff_longitude"
+        ],
+        "action": "KEEP_ROW",
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FilterOnNumericalRange",
+      "params": {
+        "min": 0.0,
+        "max": 0.1188,
+        "booleanMode": "AND",
+        "columns": [
+          "abs_diff_latitude"
+        ],
+        "action": "KEEP_ROW",
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    }
+  ],
+  "maxProcessedMemTableBytes": -1,
+  "previewMode": "ALL_ROWS",
+  "vizSampling": {
+    "_refreshTrigger": 0,
+    "autoRefreshSample": false
+  },
+  "analysisColumnData": {},
+  "columnWidthsByName": {
+    "dropoff_longitude": 169,
+    "fare_amount": 100,
+    "pickup_longitude": 162,
+    "pickup_latitude": 155,
+    "abs_diff_latitude": 169,
+    "pickup_datetime": 176,
+    "passenger_count": 128,
+    "abs_diff_longitude": 176,
+    "dropoff_latitude": 135,
+    "key": 218
+  },
+  "sorting": [],
+  "globalSearchQuery": "",
+  "coloring": {
+    "scheme": "MEANING_AND_STATUS",
+    "individualColumns": [],
+    "valueColoringMode": "HASH"
+  }
+}
