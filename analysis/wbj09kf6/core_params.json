@@ -1,12 +1,85 @@
 {
   "inputDatasetSmartName": "test_prepared_scored",
   "script": {
-    "steps": [],
+    "steps": [
+      {
+        "type": "ColumnsSelector",
+        "params": {
+          "keep": true,
+          "appliesTo": "COLUMNS",
+          "columns": [
+            "key",
+            "prediction"
+          ]
+        },
+        "metaType": "PROCESSOR",
+        "preview": false,
+        "disabled": false,
+        "alwaysShowComment": false
+      },
+      {
+        "type": "ColumnRenamer",
+        "params": {
+          "renamings": [
+            {
+              "from": "prediction",
+              "to": "fare_amount"
+            }
+          ]
+        },
+        "metaType": "PROCESSOR",
+        "preview": false,
+        "disabled": false,
+        "alwaysShowComment": false
+      },
+      {
+        "type": "ColumnsSelector",
+        "params": {
+          "keep": false,
+          "appliesTo": "SINGLE_COLUMN",
+          "columns": [
+            "prediction"
+          ]
+        },
+        "metaType": "PROCESSOR",
+        "preview": false,
+        "disabled": false,
+        "alwaysShowComment": false
+      },
+      {
+        "type": "RoundProcessor",
+        "params": {
+          "mode": "ROUND",
+          "places": 1,
+          "precision": 0,
+          "appliesTo": "SINGLE_COLUMN",
+          "columns": [
+            "fare_amount"
+          ]
+        },
+        "metaType": "PROCESSOR",
+        "preview": true,
+        "disabled": false,
+        "alwaysShowComment": false
+      }
+    ],
     "maxProcessedMemTableBytes": -1,
     "columnsSelection": {
       "mode": "ALL"
     },
-    "columnWidthsByName": {},
+    "columnWidthsByName": {
+      "key": 218,
+      "pickup_datetime": 176,
+      "pickup_longitude": 162,
+      "pickup_latitude": 155,
+      "dropoff_longitude": 169,
+      "abs_diff_longitude": 176,
+      "dropoff_latitude": 135,
+      "abs_diff_latitude": 169,
+      "passenger_count": 128,
+      "prediction": 141,
+      "fare_amount": 141
+    },
     "coloring": {
       "scheme": "MEANING_AND_STATUS",
       "individualColumns": [],
@@ -40,7 +113,9 @@
       "autoRefreshSample": false,
       "_refreshTrigger": 0
     },
-    "exploreUIParams": {},
+    "exploreUIParams": {
+      "autoRefresh": true
+    },
     "globalSearchQuery": "",
     "explorationFilters": [],
     "previewMode": "ALL_ROWS"
@@ -48,11 +123,11 @@
   "charts": [],
   "name": "Analyze test_prepared_scored",
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 13,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1594389581790
+    "lastModifiedOn": 1594389943061
   },
   "creationTag": {
     "versionNumber": 0,
