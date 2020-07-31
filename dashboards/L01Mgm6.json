@@ -7,8 +7,8 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": -1,
-              "left": -1,
+              "top": 0,
+              "left": 0,
               "width": 4,
               "height": 5
             },
@@ -33,11 +33,11 @@
   "name": "Ny_Taxi\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1596209623582
+    "lastModifiedOn": 1596209658685
   },
   "creationTag": {
     "versionNumber": 0,
