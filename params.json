@@ -1,7 +1,17 @@
 {
   "dashboardAuthorizations": {
     "allAuthorized": false,
-    "authorizations": []
+    "authorizations": [
+      {
+        "objectRef": {
+          "objectId": "Correlations analysis on train_filtered_prepared (admin)",
+          "objectType": "JUPYTER_NOTEBOOK"
+        },
+        "modes": [
+          "READ"
+        ]
+      }
+    ]
   },
   "exposedObjects": {
     "objects": []
@@ -167,6 +177,13 @@
     "displayedState": {
       "checks": []
     }
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1596209621132
   },
   "creationTag": {
     "versionNumber": 0,
