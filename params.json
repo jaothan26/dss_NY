@@ -123,7 +123,6 @@
     }
   },
   "name": "Ny_Taxi",
-  "projectStatus": "Sandbox",
   "metrics": {
     "probes": [],
     "engineConfig": {
@@ -179,11 +178,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1596209621132
+    "lastModifiedOn": 1609230403720
   },
   "creationTag": {
     "versionNumber": 0,
@@ -193,7 +192,9 @@
     "lastModifiedOn": 1594363403119
   },
   "shortDesc": "The project *Ny_Taxi* was created by John GCK on Jul 10th 2020",
-  "tags": [],
+  "tags": [
+    "duplicated"
+  ],
   "customFields": {},
   "checklists": {
     "checklists": [

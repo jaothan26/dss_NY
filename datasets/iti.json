@@ -75,7 +75,7 @@
   "tags": [],
   "params": {
     "connection": "filesystem_managed",
-    "path": "${projectKey}/iti",
+    "path": "/COPYOFNY_TAXI.iti",
     "notReadyIfEmpty": false,
     "filesSelectionRules": {
       "mode": "ALL",
