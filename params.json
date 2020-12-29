@@ -122,7 +122,7 @@
       }
     }
   },
-  "name": "Ny_Taxi",
+  "name": "Copy of Ny_Taxi",
   "metrics": {
     "probes": [],
     "engineConfig": {
@@ -178,11 +178,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1609230403720
+    "lastModifiedOn": 1609230529021
   },
   "creationTag": {
     "versionNumber": 0,
@@ -191,7 +191,7 @@
     },
     "lastModifiedOn": 1594363403119
   },
-  "shortDesc": "The project *Ny_Taxi* was created by John GCK on Jul 10th 2020",
+  "shortDesc": "The project *Ny_Taxi* was created by John GCK on Jul 10th 2020\nThe project *COPYOFNY_TAXI* was copied from *NY_TAXI* by John GCK on Dec 29th 2020",
   "tags": [
     "duplicated"
   ],
