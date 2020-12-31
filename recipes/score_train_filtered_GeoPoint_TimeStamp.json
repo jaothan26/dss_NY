@@ -41,11 +41,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1609410615421
+    "lastModifiedOn": 1609411796462
   },
   "creationTag": {
     "versionNumber": 0,
@@ -54,7 +54,9 @@
     },
     "lastModifiedOn": 1609410612857
   },
-  "tags": [],
+  "tags": [
+    "modelisation"
+  ],
   "customFields": {},
   "checklists": {
     "checklists": []
