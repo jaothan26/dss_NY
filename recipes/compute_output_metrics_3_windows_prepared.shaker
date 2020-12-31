@@ -25,8 +25,38 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "100*(rmse_last - rmse_first) / rmse_first",
+        "column": "model_drift"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "date",
+          "model_drift"
+        ],
+        "keep": true,
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -34,7 +64,22 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "date": 204,
+    "r2": 141,
+    "evs": 141,
+    "w2_rownumber": 134,
+    "rmsle": 100,
+    "newcolumn_expression": 190,
+    "model_drift": 127,
+    "mae": 141,
+    "pearson": 134,
+    "rmse": 134,
+    "rownumber": 113,
+    "mape": 148,
+    "customScore": 127,
+    "mse": 141
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
