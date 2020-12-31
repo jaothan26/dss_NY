@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1609420608095
+    "lastModifiedOn": 1609420664502
   },
   "creationTag": {
     "versionNumber": 0,
@@ -91,48 +91,8 @@
         "type": "date"
       },
       {
-        "name": "evs",
-        "type": "double"
-      },
-      {
-        "name": "mae",
-        "type": "double"
-      },
-      {
-        "name": "mse",
-        "type": "double"
-      },
-      {
-        "name": "mape",
-        "type": "double"
-      },
-      {
-        "name": "rmse",
-        "type": "double"
-      },
-      {
-        "name": "rmsle",
-        "type": "double"
-      },
-      {
-        "name": "r2",
-        "type": "double"
-      },
-      {
-        "name": "pearson",
-        "type": "double"
-      },
-      {
-        "name": "customScore",
+        "name": "model_drift",
         "type": "string"
-      },
-      {
-        "name": "rownumber",
-        "type": "bigint"
-      },
-      {
-        "name": "w2_rownumber",
-        "type": "bigint"
       }
     ],
     "userModified": true
