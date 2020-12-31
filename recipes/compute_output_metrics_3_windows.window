@@ -4,6 +4,7 @@
     "enabled": false
   },
   "ntileValues": "10",
+  "keys": [],
   "values": [
     {
       "last": false,
@@ -12,9 +13,11 @@
       "firstLastNotNull": false,
       "column": "date",
       "count": false,
+      "$idx": 0,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "date",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -35,9 +38,11 @@
       "firstLastNotNull": false,
       "column": "evs",
       "count": false,
+      "$idx": 1,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "double",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -58,9 +63,11 @@
       "firstLastNotNull": false,
       "column": "mae",
       "count": false,
+      "$idx": 2,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "double",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -81,9 +88,11 @@
       "firstLastNotNull": false,
       "column": "mse",
       "count": false,
+      "$idx": 3,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "double",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -104,9 +113,11 @@
       "firstLastNotNull": false,
       "column": "mape",
       "count": false,
+      "$idx": 4,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "double",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -127,9 +138,11 @@
       "firstLastNotNull": false,
       "column": "rmse",
       "count": false,
+      "$idx": 5,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "double",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -150,9 +163,11 @@
       "firstLastNotNull": false,
       "column": "rmsle",
       "count": false,
+      "$idx": 6,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "double",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -173,9 +188,11 @@
       "firstLastNotNull": false,
       "column": "r2",
       "count": false,
+      "$idx": 7,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "double",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -196,9 +213,11 @@
       "firstLastNotNull": false,
       "column": "pearson",
       "count": false,
+      "$idx": 8,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "double",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -219,9 +238,11 @@
       "firstLastNotNull": false,
       "column": "customScore",
       "count": false,
+      "$idx": 9,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "double",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -239,20 +260,90 @@
   "legacyUnboundedWindowStreamBehavior": false,
   "windows": [
     {
-      "windowUpperBound": 0.0,
+      "windowUpperBound": 0,
       "enablePartitioning": false,
-      "enableOrdering": false,
+      "enableOrdering": true,
       "precedingRows": 0,
       "limitFollowing": false,
-      "orders": [],
+      "orders": [
+        {
+          "column": "date",
+          "desc": false
+        }
+      ],
       "limitPreceding": false,
       "followingRows": 0,
-      "windowLowerBound": 0.0,
+      "windowLowerBound": 0,
       "enableLimits": false
+    },
+    {
+      "prefix": "w2",
+      "enableOrdering": true,
+      "orders": [
+        {
+          "column": "date",
+          "desc": false
+        }
+      ]
     }
   ],
   "computedColumns": [],
   "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "date",
+            "type": "date"
+          },
+          {
+            "name": "evs",
+            "type": "double"
+          },
+          {
+            "name": "mae",
+            "type": "double"
+          },
+          {
+            "name": "mse",
+            "type": "double"
+          },
+          {
+            "name": "mape",
+            "type": "double"
+          },
+          {
+            "name": "rmse",
+            "type": "double"
+          },
+          {
+            "name": "rmsle",
+            "type": "double"
+          },
+          {
+            "name": "r2",
+            "type": "double"
+          },
+          {
+            "name": "pearson",
+            "type": "double"
+          },
+          {
+            "name": "customScore",
+            "type": "double"
+          },
+          {
+            "name": "rownumber",
+            "type": "bigint"
+          },
+          {
+            "name": "w2_rownumber",
+            "type": "bigint"
+          }
+        ],
+        "userModified": false
+      }
+    },
     "distinct": false,
     "enabled": false
   },
@@ -294,5 +385,6 @@
   "ntile": false,
   "rank": false,
   "denseRank": false,
-  "rowNumber": false
+  "rowNumber": true,
+  "outputColumnNameOverrides": {}
 }
