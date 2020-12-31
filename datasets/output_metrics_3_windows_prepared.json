@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1609420690147
+    "lastModifiedOn": 1609420694199
   },
   "creationTag": {
     "versionNumber": 0,
@@ -92,7 +92,7 @@
       },
       {
         "name": "model_drift",
-        "type": "string",
+        "type": "double",
         "meaning": "DoubleMeaning"
       }
     ],
