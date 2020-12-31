@@ -114,6 +114,29 @@
             "insightType": "chart",
             "displayMode": "INSIGHT",
             "resizeImageMode": "FIT_SIZE"
+          },
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": -1,
+              "left": -1,
+              "width": 2,
+              "height": 2
+            },
+            "clickAction": "OPEN_INSIGHT",
+            "tileParams": {
+              "showXAxis": true,
+              "showYAxis": true,
+              "showLegend": false,
+              "showTooltips": true,
+              "autoPlayAnimation": true
+            },
+            "autoLoad": true,
+            "showTitle": "YES",
+            "insightId": "DsCYASs",
+            "insightType": "chart",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
           }
         ]
       },
@@ -125,11 +148,11 @@
   "name": "Ny_Taxi\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 19,
+    "versionNumber": 20,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1609411030916
+    "lastModifiedOn": 1609411109154
   },
   "creationTag": {
     "versionNumber": 0,
