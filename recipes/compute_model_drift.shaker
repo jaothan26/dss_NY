@@ -51,7 +51,7 @@
           "date",
           "model_drift"
         ],
-        "keep": false,
+        "keep": true,
         "appliesTo": "COLUMNS"
       },
       "alwaysShowComment": false
