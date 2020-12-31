@@ -3,7 +3,10 @@
   "neverRecomputeExistingPartitions": false,
   "optionalDependencies": false,
   "params": {
-    "customConfig": {},
+    "customConfig": {
+      "text_column": "cluster_labels",
+      "static_insight_id": "cluster"
+    },
     "containerSelection": {
       "containerMode": "INHERIT"
     }
@@ -34,11 +37,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1609418659991
+    "lastModifiedOn": 1609418675637
   },
   "creationTag": {
     "versionNumber": 0,
