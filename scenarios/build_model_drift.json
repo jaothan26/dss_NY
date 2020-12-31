@@ -5,11 +5,11 @@
   "name": "build_model_drift",
   "active": false,
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1609421546806
+    "lastModifiedOn": 1609421691026
   },
   "checklists": {
     "checklists": []
@@ -96,6 +96,24 @@
             }
           ],
           "warningsAsErrors": false,
+          "proceedOnFailure": false
+        }
+      },
+      {
+        "id": "run_scenario_null.RETRAIN_MODEL",
+        "type": "run_scenario",
+        "name": "retrain_model",
+        "runConditionType": "RUN_CONDITIONALLY",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "stepOutcome_check_model_drift !\u003d \u0027SUCCESS\u0027",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "scenarioId": "RETRAIN_MODEL",
           "proceedOnFailure": false
         }
       }
