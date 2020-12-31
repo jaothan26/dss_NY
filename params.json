@@ -19,6 +19,15 @@
         "modes": [
           "READ"
         ]
+      },
+      {
+        "objectRef": {
+          "objectId": "PCA on train_filtered_prepared (admin)",
+          "objectType": "JUPYTER_NOTEBOOK"
+        },
+        "modes": [
+          "READ"
+        ]
       }
     ]
   },
@@ -187,11 +196,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1609409250371
+    "lastModifiedOn": 1609410792114
   },
   "creationTag": {
     "versionNumber": 0,
