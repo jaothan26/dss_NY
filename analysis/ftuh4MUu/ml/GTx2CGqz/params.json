@@ -1371,7 +1371,7 @@
           "singleColor": "#2678B1",
           "transparency": 0.75,
           "colorPalette": "magma",
-          "ccScaleMode": "LOG",
+          "ccScaleMode": "NORMAL",
           "customPalette": {
             "id": "__dku_custom__",
             "name": "Custom Palette",
