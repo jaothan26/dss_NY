@@ -3,14 +3,14 @@
   "centileSplits": [
     {
       "outputIndex": 0,
-      "share": 50.0
+      "share": 50
     }
   ],
-  "defaultOutputIndex": 1,
   "preFilter": {
     "distinct": false,
     "enabled": false
   },
+  "defaultOutputIndex": -1,
   "seed": 1337,
   "randomColumns": [],
   "centileOrders": [],
@@ -18,17 +18,18 @@
   "randomSplits": [
     {
       "outputIndex": 0,
-      "share": 50.0
+      "share": 80
     }
   ],
   "randomColumnsSplits": [
     {
       "outputIndex": 0,
-      "share": 50.0
+      "share": 50
     }
   ],
   "computedColumns": [],
   "writeComputedColumnsInOutput": false,
+  "mode": "RANDOM",
   "centileTDigest": false,
   "valueSplits": [
     {
@@ -89,6 +90,84 @@
         "uiData": {
           "mode": "\u0026\u0026",
           "conditions": []
+        },
+        "$status": {
+          "schema": {
+            "columns": [
+              {
+                "name": "key",
+                "type": "string"
+              },
+              {
+                "name": "fare_amount",
+                "type": "double"
+              },
+              {
+                "name": "pickup_datetime",
+                "type": "string"
+              },
+              {
+                "name": "pickup_datetime_format",
+                "type": "date"
+              },
+              {
+                "name": "year",
+                "type": "bigint"
+              },
+              {
+                "name": "month",
+                "type": "bigint"
+              },
+              {
+                "name": "weekday",
+                "type": "bigint"
+              },
+              {
+                "name": "pickup_longitude",
+                "type": "double"
+              },
+              {
+                "name": "pickup_latitude",
+                "type": "double"
+              },
+              {
+                "name": "dropoff_longitude",
+                "type": "double"
+              },
+              {
+                "name": "abs_diff_longitude",
+                "type": "double"
+              },
+              {
+                "name": "dropoff_latitude",
+                "type": "double"
+              },
+              {
+                "name": "abs_diff_latitude",
+                "type": "double"
+              },
+              {
+                "name": "passenger_count",
+                "type": "bigint"
+              },
+              {
+                "name": "geopoint_pickup",
+                "type": "string"
+              },
+              {
+                "name": "geopoint_dropoff",
+                "type": "string"
+              },
+              {
+                "name": "distance",
+                "type": "double"
+              },
+              {
+                "name": "cluster_labels",
+                "type": "string"
+              }
+            ]
+          }
         },
         "distinct": false,
         "enabled": true
