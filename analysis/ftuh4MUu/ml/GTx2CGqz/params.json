@@ -1369,7 +1369,7 @@
         "animationRepeat": true,
         "colorOptions": {
           "singleColor": "#2678B1",
-          "transparency": 0.75,
+          "transparency": 1.0,
           "colorPalette": "magma",
           "ccScaleMode": "NORMAL",
           "customPalette": {
