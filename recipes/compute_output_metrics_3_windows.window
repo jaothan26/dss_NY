@@ -289,6 +289,17 @@
   ],
   "computedColumns": [],
   "postFilter": {
+    "uiData": {
+      "mode": "\u0026\u0026",
+      "conditions": [
+        {
+          "input": "evs",
+          "col": "evs",
+          "num": 0.6,
+          "operator": "\u003e\u003d [number]"
+        }
+      ]
+    },
     "$status": {
       "schema": {
         "columns": [
@@ -342,10 +353,14 @@
           }
         ],
         "userModified": false
-      }
+      },
+      "validated": true,
+      "fullyTranslated": false,
+      "ok": false,
+      "message": "Filter expression is invalid"
     },
     "distinct": false,
-    "enabled": false
+    "enabled": true
   },
   "cumeDist": false,
   "engineParams": {
