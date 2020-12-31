@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1609410839181
+    "lastModifiedOn": 1609411770303
   },
   "creationTag": {
     "versionNumber": 0,
@@ -72,7 +72,9 @@
     },
     "lastModifiedOn": 1609410839181
   },
-  "tags": [],
+  "tags": [
+    "modelisation"
+  ],
   "params": {
     "connection": "filesystem_managed",
     "path": "${projectKey}/test_filtered_K_means",
