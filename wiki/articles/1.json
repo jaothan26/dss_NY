@@ -1,13 +1,25 @@
 {
   "name": "wiki_1",
   "layout": "WIKI_ARTICLE",
-  "attachments": [],
+  "attachments": [
+    {
+      "attachmentType": "FILE",
+      "smartId": "bo7OMcBJyy6h",
+      "details": {
+        "objectDisplayName": "abs_diff_longitude vs abs_diff_latitude.png",
+        "size": 241528,
+        "mimeType": "image/png"
+      },
+      "attachedBy": "admin",
+      "attachedOn": 1609425268529
+    }
+  ],
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1609425240519
+    "lastModifiedOn": 1609425268529
   },
   "creationTag": {
     "versionNumber": 0,
