@@ -294,7 +294,7 @@
       "conditions": [
         {
           "input": "evs",
-          "col": "evs",
+          "col": "date",
           "num": 0.6,
           "operator": "\u003e\u003d [number]"
         }
