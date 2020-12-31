@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1609411507174
+    "lastModifiedOn": 1609411568627
   },
   "creationTag": {
     "versionNumber": 0,
@@ -85,8 +85,53 @@
     }
   },
   "schema": {
-    "columns": [],
-    "userModified": true
+    "columns": [
+      {
+        "name": "dtype",
+        "type": "string"
+      },
+      {
+        "name": "type",
+        "type": "string"
+      },
+      {
+        "name": "variable",
+        "type": "string"
+      },
+      {
+        "name": "count",
+        "type": "double"
+      },
+      {
+        "name": "mean",
+        "type": "double"
+      },
+      {
+        "name": "std",
+        "type": "double"
+      },
+      {
+        "name": "min",
+        "type": "double"
+      },
+      {
+        "name": "25%",
+        "type": "double"
+      },
+      {
+        "name": "50%",
+        "type": "double"
+      },
+      {
+        "name": "75%",
+        "type": "double"
+      },
+      {
+        "name": "max",
+        "type": "double"
+      }
+    ],
+    "userModified": false
   },
   "metrics": {
     "probes": [
