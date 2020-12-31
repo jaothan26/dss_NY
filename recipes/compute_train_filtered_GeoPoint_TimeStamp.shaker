@@ -25,8 +25,83 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "GeoPointCreator",
+      "params": {
+        "out_column": "geopoint_pickup",
+        "lat_column": "pickup_latitude",
+        "lon_column": "pickup_longitude"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "GeoPointCreator",
+      "params": {
+        "out_column": "geopoint_dropoff",
+        "lat_column": "dropoff_latitude",
+        "lon_column": "dropoff_longitude"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "GeoDistanceProcessor",
+      "params": {
+        "output": "distance",
+        "input2": "geopoint_dropoff",
+        "outputUnit": "KILOMETERS",
+        "input1": "geopoint_pickup",
+        "compareTo": "COLUMN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateParser",
+      "params": {
+        "outCol": "pickup_datetime_format",
+        "formats": [
+          "yyyy-MM-dd HH:mm:ss"
+        ],
+        "columns": [
+          "pickup_datetime"
+        ],
+        "timezone_id": "UTC",
+        "appliesTo": "SINGLE_COLUMN",
+        "lang": "auto"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateComponentsExtractor",
+      "params": {
+        "outMonthColumn": "month",
+        "outYearColumn": "year",
+        "column": "pickup_datetime_format",
+        "outDayOfWeekColumn": "weekday",
+        "timezone_id": "UTC"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -34,7 +109,26 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "fare_amount": 100,
+    "pickup_longitude": 162,
+    "distance": 100,
+    "year": 100,
+    "abs_diff_latitude": 169,
+    "weekday": 100,
+    "pickup_datetime": 176,
+    "passenger_count": 128,
+    "dropoff_latitude": 135,
+    "pickup_datetime_format": 204,
+    "dropoff_longitude": 169,
+    "geopoint_pickup": 300,
+    "month": 100,
+    "pickup_latitude": 155,
+    "abs_diff_longitude": 176,
+    "geopoint_dropoff": 300,
+    "key": 218,
+    "geopoint_": 300
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
