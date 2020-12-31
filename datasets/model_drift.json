@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1609421372947
+    "lastModifiedOn": 1609421797728
   },
   "creationTag": {
     "versionNumber": 0,
@@ -87,64 +87,12 @@
   "schema": {
     "columns": [
       {
-        "name": "evs",
+        "name": "date",
+        "type": "date"
+      },
+      {
+        "name": "model_drift",
         "type": "double"
-      },
-      {
-        "name": "mae",
-        "type": "double"
-      },
-      {
-        "name": "mse",
-        "type": "double"
-      },
-      {
-        "name": "mape",
-        "type": "double"
-      },
-      {
-        "name": "rmse",
-        "type": "double"
-      },
-      {
-        "name": "rmsle",
-        "type": "double"
-      },
-      {
-        "name": "r2",
-        "type": "double"
-      },
-      {
-        "name": "pearson",
-        "type": "double"
-      },
-      {
-        "name": "customScore",
-        "type": "string"
-      },
-      {
-        "name": "rmse_first",
-        "type": "double"
-      },
-      {
-        "name": "rmse_last",
-        "type": "double"
-      },
-      {
-        "name": "rownumber",
-        "type": "bigint"
-      },
-      {
-        "name": "w2_rmse_first",
-        "type": "double"
-      },
-      {
-        "name": "w2_rmse_last",
-        "type": "double"
-      },
-      {
-        "name": "w2_rownumber",
-        "type": "bigint"
       }
     ],
     "userModified": true
