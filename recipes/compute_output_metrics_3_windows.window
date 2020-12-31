@@ -132,52 +132,58 @@
       "first": false
     },
     {
-      "last": false,
       "lagDiff": false,
+      "$idx": 5,
+      "lagValues": "1",
+      "sum": false,
+      "type": "double",
+      "dateDiffUnit": "DAY",
+      "min": false,
+      "avg": false,
+      "lag": false,
+      "leadValues": "1",
+      "$selected": false,
+      "stddev": false,
+      "value": true,
+      "orderColumn": "date",
+      "concatSeparator": ",",
+      "last": true,
       "max": false,
       "firstLastNotNull": false,
       "column": "rmse",
       "count": false,
-      "$idx": 5,
-      "lagValues": "1",
-      "sum": false,
       "concat": false,
-      "type": "double",
       "lead": false,
       "concatDistinct": false,
+      "countDistinct": false,
+      "leadDiff": false,
+      "first": true
+    },
+    {
+      "lagDiff": false,
+      "$idx": 6,
+      "lagValues": "1",
+      "sum": false,
+      "type": "double",
       "dateDiffUnit": "DAY",
       "min": false,
-      "countDistinct": false,
       "avg": false,
       "lag": false,
       "leadValues": "1",
+      "$selected": false,
       "stddev": false,
       "value": true,
-      "leadDiff": false,
-      "first": false
-    },
-    {
+      "orderColumn": "date",
+      "concatSeparator": ",",
       "last": false,
-      "lagDiff": false,
       "max": false,
       "firstLastNotNull": false,
       "column": "rmsle",
       "count": false,
-      "$idx": 6,
-      "lagValues": "1",
-      "sum": false,
       "concat": false,
-      "type": "double",
       "lead": false,
       "concatDistinct": false,
-      "dateDiffUnit": "DAY",
-      "min": false,
       "countDistinct": false,
-      "avg": false,
-      "lag": false,
-      "leadValues": "1",
-      "stddev": false,
-      "value": true,
       "leadDiff": false,
       "first": false
     },
@@ -344,8 +350,24 @@
             "type": "double"
           },
           {
+            "name": "rmse_first",
+            "type": "double"
+          },
+          {
+            "name": "rmse_last",
+            "type": "double"
+          },
+          {
             "name": "rownumber",
             "type": "bigint"
+          },
+          {
+            "name": "w2_rmse_first",
+            "type": "double"
+          },
+          {
+            "name": "w2_rmse_last",
+            "type": "double"
           },
           {
             "name": "w2_rownumber",
