@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1594365049622
+    "lastModifiedOn": 1609411721679
   },
   "creationTag": {
     "versionNumber": 0,
@@ -72,7 +72,9 @@
     },
     "lastModifiedOn": 1594365049622
   },
-  "tags": [],
+  "tags": [
+    "dataprep"
+  ],
   "params": {
     "connection": "filesystem_managed",
     "path": "${projectKey}/test_prepared",
