@@ -1325,7 +1325,15 @@
             "isA": "ua"
           }
         ],
-        "uaSize": [],
+        "uaSize": [
+          {
+            "column": "prediction",
+            "type": "NUMERICAL",
+            "treatAsAlphanum": false,
+            "isA": "ua",
+            "adminLevel": 0
+          }
+        ],
         "uaShape": [],
         "uaColor": [
           {
