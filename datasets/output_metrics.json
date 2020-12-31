@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1609419983087
+    "lastModifiedOn": 1609420013549
   },
   "creationTag": {
     "versionNumber": 0,
@@ -157,22 +157,6 @@
       {
         "name": "prediction",
         "type": "float"
-      },
-      {
-        "name": "error",
-        "type": "double"
-      },
-      {
-        "name": "error_decile",
-        "type": "smallint"
-      },
-      {
-        "name": "abs_error_decile",
-        "type": "smallint"
-      },
-      {
-        "name": "relative_error",
-        "type": "double"
       }
     ],
     "userModified": true
