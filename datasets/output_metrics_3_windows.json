@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1609420511225
+    "lastModifiedOn": 1609420547439
   },
   "creationTag": {
     "versionNumber": 0,
@@ -125,6 +125,14 @@
       {
         "name": "customScore",
         "type": "double"
+      },
+      {
+        "name": "rownumber",
+        "type": "bigint"
+      },
+      {
+        "name": "w2_rownumber",
+        "type": "bigint"
       }
     ],
     "userModified": true
