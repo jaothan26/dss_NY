@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1609414345341
+    "lastModifiedOn": 1609414402948
   },
   "creationTag": {
     "versionNumber": 0,
@@ -86,10 +86,6 @@
   },
   "schema": {
     "columns": [
-      {
-        "name": "key",
-        "type": "string"
-      },
       {
         "name": "pickup_datetime",
         "type": "string"
@@ -153,10 +149,6 @@
       {
         "name": "cluster_labels",
         "type": "string"
-      },
-      {
-        "name": "prediction",
-        "type": "double"
       }
     ],
     "userModified": true
