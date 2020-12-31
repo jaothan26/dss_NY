@@ -8,25 +8,6 @@
             "tileType": "INSIGHT",
             "box": {
               "top": 0,
-              "left": 0,
-              "width": 4,
-              "height": 5
-            },
-            "clickAction": "DO_NOTHING",
-            "tileParams": {
-              "showCode": false
-            },
-            "autoLoad": true,
-            "showTitle": "YES",
-            "insightId": "dWfWYJw",
-            "insightType": "jupyter",
-            "displayMode": "INSIGHT",
-            "resizeImageMode": "FIT_SIZE"
-          },
-          {
-            "tileType": "INSIGHT",
-            "box": {
-              "top": 0,
               "left": 4,
               "width": 4,
               "height": 3
@@ -72,8 +53,8 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 3,
-              "left": 4,
+              "top": 7,
+              "left": 8,
               "width": 4,
               "height": 3
             },
@@ -96,9 +77,9 @@
             "tileType": "INSIGHT",
             "box": {
               "top": 3,
-              "left": 8,
-              "width": 3,
-              "height": 2
+              "left": 0,
+              "width": 4,
+              "height": 3
             },
             "clickAction": "OPEN_INSIGHT",
             "tileParams": {
@@ -118,16 +99,16 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": -1,
-              "left": -1,
-              "width": 2,
-              "height": 2
+              "top": 3,
+              "left": 4,
+              "width": 6,
+              "height": 4
             },
             "clickAction": "OPEN_INSIGHT",
             "tileParams": {
               "showXAxis": true,
               "showYAxis": true,
-              "showLegend": false,
+              "showLegend": true,
               "showTooltips": true,
               "autoPlayAnimation": true
             },
@@ -148,11 +129,11 @@
   "name": "Ny_Taxi\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 21,
+    "versionNumber": 22,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1609411111087
+    "lastModifiedOn": 1609411246411
   },
   "creationTag": {
     "versionNumber": 0,
