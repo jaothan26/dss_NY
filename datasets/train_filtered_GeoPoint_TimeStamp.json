@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1609408329918
+    "lastModifiedOn": 1609408598595
   },
   "creationTag": {
     "versionNumber": 0,
@@ -99,6 +99,22 @@
         "type": "string"
       },
       {
+        "name": "pickup_datetime_format",
+        "type": "date"
+      },
+      {
+        "name": "year",
+        "type": "bigint"
+      },
+      {
+        "name": "month",
+        "type": "bigint"
+      },
+      {
+        "name": "weekday",
+        "type": "bigint"
+      },
+      {
         "name": "pickup_longitude",
         "type": "double"
       },
@@ -125,6 +141,18 @@
       {
         "name": "passenger_count",
         "type": "bigint"
+      },
+      {
+        "name": "geopoint_pickup",
+        "type": "string"
+      },
+      {
+        "name": "geopoint_dropoff",
+        "type": "string"
+      },
+      {
+        "name": "distance",
+        "type": "double"
       }
     ],
     "userModified": true
