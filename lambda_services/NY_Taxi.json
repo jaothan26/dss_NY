@@ -19,6 +19,7 @@
               "pickup_latitude": 40.7638053894043,
               "dropoff_longitude": -73.98143005371094,
               "abs_diff_longitude": 0.00811004638671875,
+              "dropoff_latitude": 40.74383544921875,
               "abs_diff_latitude": 0.019969940185546875,
               "passenger_count": 1,
               "geopoint_pickup": "POINT(-73.97332000732422 40.7638053894043)",
