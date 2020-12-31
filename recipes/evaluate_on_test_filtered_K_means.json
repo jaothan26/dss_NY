@@ -4,7 +4,7 @@
   "optionalDependencies": false,
   "params": {
     "containerSelection": {
-      "containerMode": "INHERIT"
+      "containerMode": "NONE"
     }
   },
   "customMeta": {
@@ -49,11 +49,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1609419865957
+    "lastModifiedOn": 1609419896396
   },
   "creationTag": {
     "versionNumber": 0,
