@@ -1,10 +1,5 @@
 {
-  "outputs": [
-    "error",
-    "error_decile",
-    "abs_error_decile",
-    "relative_error"
-  ],
+  "outputs": [],
   "perGPUMemoryFraction": 0.5,
   "sqlPipelineParams": {
     "pipelineAllowMerge": true,
@@ -37,7 +32,7 @@
     "shapleyBackgroundSize": 100,
     "nbExplanations": 3
   },
-  "forcedClassifierThreshold": 0.0,
+  "forcedClassifierThreshold": 0,
   "batchSize": 100,
   "outputExplanations": false,
   "overrideModelSpecifiedThreshold": false,
