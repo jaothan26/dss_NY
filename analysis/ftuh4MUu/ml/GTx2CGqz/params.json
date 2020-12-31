@@ -1327,7 +1327,15 @@
         ],
         "uaSize": [],
         "uaShape": [],
-        "uaColor": [],
+        "uaColor": [
+          {
+            "column": "fare_amount",
+            "type": "NUMERICAL",
+            "treatAsAlphanum": false,
+            "isA": "ua",
+            "adminLevel": 0
+          }
+        ],
         "uaTooltip": [],
         "groupDimension": [],
         "xMeasure": [],
