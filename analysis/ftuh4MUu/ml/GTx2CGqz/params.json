@@ -1294,9 +1294,9 @@
   "predictionDisplayCharts": [
     {
       "def": {
-        "type": "grouped_columns",
+        "type": "scatter",
         "variant": "normal",
-        "name": "New chart",
+        "name": "abs_diff_longitude vs abs_diff_latitude",
         "userEditedName": false,
         "genericDimension0": [],
         "genericDimension1": [],
@@ -1305,8 +1305,26 @@
         "genericMeasures": [],
         "xDimension": [],
         "yDimension": [],
-        "uaXDimension": [],
-        "uaYDimension": [],
+        "uaXDimension": [
+          {
+            "column": "abs_diff_longitude",
+            "type": "NUMERICAL",
+            "treatAsAlphanum": false,
+            "sortBy": "NATURAL",
+            "sortAscending": false,
+            "isA": "ua"
+          }
+        ],
+        "uaYDimension": [
+          {
+            "column": "abs_diff_latitude",
+            "type": "NUMERICAL",
+            "treatAsAlphanum": false,
+            "sortBy": "NATURAL",
+            "sortAscending": false,
+            "isA": "ua"
+          }
+        ],
         "uaSize": [],
         "uaShape": [],
         "uaColor": [],
@@ -1320,6 +1338,7 @@
         "tooltipMeasures": [],
         "boxplotBreakdownDim": [],
         "boxplotValue": [],
+        "filters": [],
         "axis1LogScale": false,
         "axis2LogScale": false,
         "includeZero": true,
@@ -1361,6 +1380,7 @@
           "defaultRadius": 5.0,
           "singleShape": "FILLED_CIRCLE"
         },
+        "computeMode": "NORMAL",
         "xAxisMode": "NORMAL",
         "yAxisMode": "NORMAL",
         "pieOptions": {
