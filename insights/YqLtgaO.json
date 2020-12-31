@@ -1,0 +1,162 @@
+{
+  "type": "chart",
+  "params": {
+    "datasetSmartName": "train_filtered_GeoPoint_TimeStamp",
+    "engineType": "LINO",
+    "refreshableSelection": {
+      "selection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "maxRecords": 10000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "def": {
+      "type": "scatter",
+      "variant": "normal",
+      "name": "distance vs fare_amount",
+      "userEditedName": false,
+      "genericDimension0": [],
+      "genericDimension1": [],
+      "facetDimension": [],
+      "animationDimension": [],
+      "genericMeasures": [],
+      "xDimension": [],
+      "yDimension": [],
+      "uaXDimension": [
+        {
+          "column": "distance",
+          "type": "NUMERICAL",
+          "treatAsAlphanum": false,
+          "sortBy": "NATURAL",
+          "sortAscending": false,
+          "isA": "ua"
+        }
+      ],
+      "uaYDimension": [
+        {
+          "column": "fare_amount",
+          "type": "NUMERICAL",
+          "treatAsAlphanum": false,
+          "sortBy": "NATURAL",
+          "sortAscending": false,
+          "isA": "ua"
+        }
+      ],
+      "uaSize": [],
+      "uaShape": [],
+      "uaColor": [],
+      "uaTooltip": [],
+      "groupDimension": [],
+      "xMeasure": [],
+      "yMeasure": [],
+      "colorMeasure": [],
+      "sizeMeasure": [],
+      "geometry": [],
+      "tooltipMeasures": [],
+      "boxplotBreakdownDim": [],
+      "boxplotValue": [],
+      "filters": [],
+      "axis1LogScale": false,
+      "axis2LogScale": false,
+      "includeZero": true,
+      "smoothing": true,
+      "showLegend": true,
+      "showXAxis": false,
+      "showInChartValues": false,
+      "showInChartLabels": true,
+      "strokeWidth": 1,
+      "fillOpacity": 0.6,
+      "showXAxisLabel": true,
+      "showYAxisLabel": true,
+      "hexbinRadius": 20,
+      "hexbinNumber": 20,
+      "hexbinRadiusMode": "NUM_HEXAGONS",
+      "chartHeight": 200,
+      "singleXAxis": true,
+      "multiTooltips": false,
+      "animationFrameDuration": 3000,
+      "animationRepeat": true,
+      "colorOptions": {
+        "singleColor": "#2678B1",
+        "transparency": 0.75,
+        "colorPalette": "default",
+        "ccScaleMode": "NORMAL",
+        "customPalette": {
+          "id": "__dku_custom__",
+          "name": "Custom Palette",
+          "colors": [],
+          "values": [],
+          "fixedValues": false
+        },
+        "paletteType": "CONTINUOUS",
+        "quantizationMode": "NONE",
+        "numQuantizeSteps": 5,
+        "paletteMiddleValue": 0.0
+      },
+      "bubblesOptions": {
+        "defaultRadius": 5.0,
+        "singleShape": "FILLED_CIRCLE"
+      },
+      "xAxisMode": "NORMAL",
+      "yAxisMode": "NORMAL",
+      "pieOptions": {
+        "donutHoleSize": 54.0
+      },
+      "scatterOptions": {
+        "equalScales": false,
+        "identityLine": false
+      },
+      "mapOptions": {
+        "tilesLayer": "cartodb-positron",
+        "lockSquareGrid": false
+      },
+      "mapGridOptions": {
+        "gridLonDeg": 0.5,
+        "gridLatDeg": 0.5
+      },
+      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAADIElEQVRoge2YT2hUVxTGj1FsFBLdFCRVGPSd8yIBKRYt3RQ3bsSduuxCqq5asP6Ze65uLhS6qDtBoXSRjVAYYnLPeRrURqd2XZEipaSUFlwYECQL0WhmMtPFey9O4pPomMmQcn9w4b47577zfXPu3PveAAQCgUBHaa7ptoJAIBAI/K9B1mq3NaxqkPVmx5OUTo5t7niSwAqT//bQ6sHCAOd6AADI6kTLnENt5krambcqQeuPxmUZ6LaOjoNGPo+NXgAAgCOVtUvFD7gfNnZc1HKBrLroutp6XJHVq291Hys/Lbe2N0LnKx+1M2/Heb8t7xedyVge3Y+s1/Prfa667rWYfD9h+bVQG8vtdrS9EWS58u5zFpobOnt9CwBAyQ33Ims1LksfGZ0i1t/QyN/E8vty6W2L6OL4B2j1VtFnxMlXReP5UiXW22jlRnT26m4sj+5E1l/Sef7SqxhpEutjYpk9UqmsJdY/53O78f7IjffHNjk8aEcpLktfS46/lvXpDbNjhqw+aTWyOC5imQQAwHNjH6cx8j1Z/SKPJfZzaOVGZPVLZH2ARqYBmmvQyrdkdQJZnhNLjaw/QOyfImuVjE4BAMQsz4ilQUbuIGs1+vpKf8kN9xbqfV/zsdF7mfFbqXG583oSuUase4ilVnLDvcQ6hcb/Q+wfEcvLtHrSyCrZICv/EkuDWJpodYZY6sjykFhrJVftja2eRCN1Op0M5l926+pasedxMjpB5bG98RnZRaw/5ssRrT5A9nPEUkubf5qZbCLLTN5vbVl8k3jMZdVtEksNWWfSSien0Mj0kKusX6xj4ETSuSOJWGcAANAml9HIfWQdQZY6ONdTZGTJZqQxX10jdWL5g1hm01wyGdnKhwsENBf+kUecHOuY2dSo/5RYXqbJ/GRbJrMlnS3n6dgmRzsq+n1A9nNZVdqp5HetS3LrN5UNeX/+jcu5HrLJ8Vf5uvy+/BbGXkTl8a0AALHxI/O7svGzrfdB1mpkRoa64eGdIPZ1Yrkbl6UvOjP62Xbz8yYAgE/c0hsH8bXtReNo/ETReCAQCAQCgUBgtfIfAUjysc2fNoEAAAAASUVORK5CYII\u003d",
+      "disableSafetyLimits": false,
+      "useLiveProcessingIfAvailable": true,
+      "legendPlacement": "OUTER_RIGHT"
+    },
+    "maxDataBytes": 157286400
+  },
+  "owner": "admin",
+  "listed": false,
+  "name": "distance vs fare_amount on train_filtered_GeoPoint_TimeStamp",
+  "dashboardCreationId": "L01Mgm6",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1609408952971
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1609408952971
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
