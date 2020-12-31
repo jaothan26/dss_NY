@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1609427071759
+    "lastModifiedOn": 1609427118863
   },
   "creationTag": {
     "versionNumber": 0,
@@ -91,71 +91,7 @@
         "type": "string"
       },
       {
-        "name": "pickup_datetime",
-        "type": "string"
-      },
-      {
-        "name": "pickup_datetime_format",
-        "type": "date"
-      },
-      {
-        "name": "year",
-        "type": "bigint"
-      },
-      {
-        "name": "month",
-        "type": "bigint"
-      },
-      {
-        "name": "weekday",
-        "type": "bigint"
-      },
-      {
-        "name": "pickup_longitude",
-        "type": "double"
-      },
-      {
-        "name": "pickup_latitude",
-        "type": "double"
-      },
-      {
-        "name": "dropoff_longitude",
-        "type": "double"
-      },
-      {
-        "name": "abs_diff_longitude",
-        "type": "double"
-      },
-      {
-        "name": "dropoff_latitude",
-        "type": "double"
-      },
-      {
-        "name": "abs_diff_latitude",
-        "type": "double"
-      },
-      {
-        "name": "passenger_count",
-        "type": "bigint"
-      },
-      {
-        "name": "geopoint_pickup",
-        "type": "string"
-      },
-      {
-        "name": "geopoint_dropoff",
-        "type": "string"
-      },
-      {
-        "name": "distance",
-        "type": "double"
-      },
-      {
-        "name": "cluster_labels",
-        "type": "string"
-      },
-      {
-        "name": "prediction",
+        "name": "fare_amount",
         "type": "double"
       }
     ],
