@@ -49,70 +49,48 @@
       "copySelectionFromScript": true,
       "engineType": "LINO",
       "def": {
-        "type": "grouped_columns",
+        "type": "scatter",
         "variant": "normal",
-        "name": "Avg. of fare_amount by cluster_labels",
+        "name": "abs_diff_longitude vs abs_diff_latitude",
         "userEditedName": false,
-        "genericDimension0": [
-          {
-            "column": "cluster_labels",
-            "type": "ALPHANUM",
-            "numParams": {
-              "emptyBinsMode": "ZEROS"
-            },
-            "maxValues": 20,
-            "generateOthersCategory": true,
-            "oneTickPerBin": false,
-            "filters": [],
-            "isA": "dimension",
-            "possibleSorts": [
-              {
-                "type": "NATURAL",
-                "label": "Natural ordering",
-                "sortAscending": true
-              },
-              {
-                "type": "AGGREGATION",
-                "measureIdx": 0,
-                "label": "Average of fare_amount, descending"
-              },
-              {
-                "type": "AGGREGATION",
-                "measureIdx": 0,
-                "label": "Average of fare_amount, ascending",
-                "sortAscending": true
-              }
-            ],
-            "sort": {
-              "type": "NATURAL",
-              "label": "Natural ordering",
-              "sortAscending": true
-            }
-          }
-        ],
+        "genericDimension0": [],
         "genericDimension1": [],
         "facetDimension": [],
         "animationDimension": [],
-        "genericMeasures": [
-          {
-            "column": "fare_amount",
-            "function": "AVG",
-            "type": "NUMERICAL",
-            "displayed": true,
-            "isA": "measure",
-            "displayAxis": "axis1",
-            "displayType": "column",
-            "computeMode": "NORMAL",
-            "computeModeDim": 0
-          }
-        ],
+        "genericMeasures": [],
         "xDimension": [],
         "yDimension": [],
-        "uaXDimension": [],
-        "uaYDimension": [],
+        "uaXDimension": [
+          {
+            "column": "abs_diff_longitude",
+            "type": "NUMERICAL",
+            "treatAsAlphanum": false,
+            "sortBy": "NATURAL",
+            "sortAscending": false,
+            "isA": "ua"
+          }
+        ],
+        "uaYDimension": [
+          {
+            "column": "abs_diff_latitude",
+            "type": "NUMERICAL",
+            "treatAsAlphanum": false,
+            "sortBy": "NATURAL",
+            "sortAscending": false,
+            "isA": "ua"
+          }
+        ],
         "uaSize": [],
         "uaShape": [],
-        "uaColor": [],
+        "uaColor": [
+          {
+            "column": "cluster_labels",
+            "type": "ALPHANUM",
+            "treatAsAlphanum": false,
+            "isA": "ua",
+            "adminLevel": 0
+          }
+        ],
         "uaTooltip": [],
         "groupDimension": [],
         "xMeasure": [],
@@ -146,8 +124,8 @@
         "animationRepeat": true,
         "colorOptions": {
           "singleColor": "#2678B1",
-          "transparency": 0.75,
-          "colorPalette": "default",
+          "transparency": 1.0,
+          "colorPalette": "dku_pastel2",
           "ccScaleMode": "NORMAL",
           "customPalette": {
             "id": "__dku_custom__",
@@ -165,6 +143,7 @@
           "defaultRadius": 5.0,
           "singleShape": "FILLED_CIRCLE"
         },
+        "computeMode": "NORMAL",
         "xAxisMode": "NORMAL",
         "yAxisMode": "NORMAL",
         "pieOptions": {
@@ -182,7 +161,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAa0lEQVRoge3PwQ2AIBBFQTrBzuxCGuNOa96NB7ORsJp5CTcCf0rRt6utj+vZjr6v3jUtYOAk3Q2trY833gHOEDBw/B3gDP0K/AQDDBz/C3h2wMBJwDNHRMDRO8DAwGuGAgMDAwMDS5Ik6Z1Oh0/Gq5I3JIkAAAAASUVORK5CYII\u003d",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAFI0lEQVRoge2YX2wURRzHfyCINaKUQMSoURob30iMiSZiDEJEKu2W9HYjYlSEuzlogvxTY+4a3cQIFrmZ69XuXBOFmOA1nkaDD7yZCtzu9m4XDSZAbkt9KT4AJbb4p8m11/Ght9fpcr3b/rmK8b7JLzsz95uZ32d+M3N7B1BRRRX9bxRMdvW68WtJxjS3Y7Yk46tdjvmF2zFvO1FEGF8P9nz52r8Vi2sFkrGxUj4UEab4SAQA4PMdrUtL+cup46uCyVh+Mfjyf1rODPN67+yxmvmMxZXslXebAQWR351tFJEMX383cbLkDrhtFdkTWWJn0X4qO0hNscy6UdCMPzsX8bnSVMEGk7HWfKYZLHA7VuTNQyunG8N0d9asRBFhhaAZYyUhx/viq+WJrIyKesMvAABQRMZyC3A+V2cU4YP5bewjrwIAKD5yoNA4ZDtZxm35vwAAZFleNNUumu1RmLGONXc8HPWRr53ZtsuHdx+upoiwTnR0Bd/P6Rv1hzZQHzlHEWFRFB6eP4JpKIrInwAACiK/AQCEveH7AXLZ9ZPjxfoqfkzzvohcs8v8k1fEG3nIbVwtqViXW99pSfHhDykiH9h1igjr8JMm6idDdFfkKTvrn+48+ohdpogwBZEBighr3dG6NLc4pg0Z9eMjFJEf45J8p3O+TtQ2fzdyIdmXE0WEUS9ZTxG+mgfz4zM85PgbVliwy23b22opItlO1Lk4P8akbY4vUURuzuSslu3Gzuq+jqyOWOzt1gkoPzkEAEBR+KATmCLCOpo77okicoMicp0iwvBOvNweT9mmVPPjU1/4RTdxBFOxAbnnxL1zS1dAw6e9q7M6YrzxcAATmcvZ2OQ6/oYiwpTdSvXxfeO3tCzLCwEA6C6y1jmfrHc9GkzGWEA/Uce379fiVQGza3PZgTnQsayOGDPRYrvtu5aPbsnuFGYvwghFpE+W5UWfNePHAAA6UfsWfj4xZPwU6ImtOdgdWxHoia3Jv3TosYJfdQAAnpDxUjmAWVZHo6Oa/ytnxrM6YqOavxR0htsRV/g5pLDxuIiNPhEb+XPpweYbe05FljjP6taw+fScwbkALmqZxGToxkSadexuy9fDe5VCR+EaDwoAIMXjd5QVqpimA5zVERNUq6gBADQk0vsbEun3Bf3yWgAAERsZHlrCWlWxmERsMA8xagAAPNgYmHfgUd1fFLJRu/y6DWtLUNNpQbWYDSph7UEbZnIEpd/Z+X4iNv4uK7CkXiyZVUG1mKBZVNCs80LC+ra+p6+WCzTgCHzSPyrr5O5F49xsQVM49ZzdjjrNuwEApHh/lYgNlrdPjHWzAh70bWK83dxbz7I6YkN7NrsDzVmDZr1iZ7leS28AAGjUrO9FnPohB8r4pydkvuVYiHGgUGpYltlCKWQe4EFnBVkM2Gm3wCXS1wtkl+TKWbutPpFu52EA2ALpY/O+cVjjCSlkKgAAIjHPithgHmy8I4aMfTn/MSesByfbt8vdd4nEIPMLzJ9dtbc5Vx7hLy1BtZikXVguqNYYf0ad2Woi5gP5zIeMVv4zERtqzv/XXP0PERtMIufWlxW4FLSgWjcbEr1eQbUuAQA0qlaGhy8kMWSclLBWJRKjX8TGiIiNjL0g25Rfqu2yJ3xuzaR+2LwgHUmtmjXwkG/TjQnAuv5BVJcdRJuuXPdufHLQu/FlQbXYlu6fl9Wd6V1Zd6p3SaN26Rm7f/3pi7WCas34p1xTqOf5WQFUVFFFFVVUUUUVVVRm/QNJDwierHFdHAAAAABJRU5ErkJggg\u003d\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
