@@ -1,10 +1,63 @@
 {
+  "name": "NY_Taxi",
   "endpoints": [
     {
       "modelRef": "msjFrAdZ",
       "useJava": true,
-      "testQueries": [],
-      "enrichMapping": [],
+      "testQueries": [
+        {
+          "name": "test_filtered_K_means #1",
+          "q": {
+            "features": {
+              "key": "2015-01-27 13:08:24.0000002",
+              "pickup_datetime": "2015-01-27 13:08:24 UTC",
+              "pickup_datetime_format": "2015-01-27T13:08:24.000000Z",
+              "year": 2015,
+              "month": 1,
+              "weekday": 2,
+              "pickup_longitude": -73.97332000732422,
+              "pickup_latitude": 40.7638053894043,
+              "dropoff_longitude": -73.98143005371094,
+              "abs_diff_longitude": 0.00811004638671875,
+              "abs_diff_latitude": 0.019969940185546875,
+              "passenger_count": 1,
+              "geopoint_pickup": "POINT(-73.97332000732422 40.7638053894043)",
+              "geopoint_dropoff": "POINT(-73.98143005371094 40.74383544921875)",
+              "distance": 2.32,
+              "cluster_labels": "cluster_0"
+            }
+          }
+        }
+      ],
+      "enrichMapping": [
+        {
+          "datasetRef": "train_filtered_K_means",
+          "packagingType": "BUNDLED_TOCONNECTION",
+          "on": [
+            {
+              "resourceLookupCol": "fare_amount"
+            }
+          ],
+          "missingLookupKeyBehavior": "IGNORE",
+          "notFoundBehavior": "IGNORE",
+          "multiMatchBehavior": "KEEP_FIRST",
+          "columnsMapping": {
+            "key": "key",
+            "pickup_datetime": "pickup_datetime",
+            "pickup_datetime_format": "pickup_datetime_format",
+            "year": "year",
+            "month": "month",
+            "weekday": "weekday",
+            "pickup_longitude": "pickup_longitude",
+            "pickup_latitude": "pickup_latitude",
+            "dropoff_longitude": "dropoff_longitude",
+            "abs_diff_longitude": "abs_diff_longitude",
+            "dropoff_latitude": "dropoff_latitude",
+            "abs_diff_latitude": "abs_diff_latitude",
+            "passenger_count": "passenger_count"
+          }
+        }
+      ],
       "healthCheckQueries": [],
       "id": "Taxi",
       "type": "STD_PREDICTION"
