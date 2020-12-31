@@ -1,0 +1,22 @@
+{
+  "endpoints": [
+    {
+      "modelRef": "msjFrAdZ",
+      "useJava": true,
+      "testQueries": [],
+      "enrichMapping": [],
+      "healthCheckQueries": [],
+      "id": "Taxi",
+      "type": "STD_PREDICTION"
+    }
+  ],
+  "publicAccess": true,
+  "authRealm": {
+    "queryKeys": []
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
