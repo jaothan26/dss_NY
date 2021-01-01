@@ -460,7 +460,7 @@
       "max_feature_prop": 0.3
     },
     "random_forest_classification": {
-      "enabled": true,
+      "enabled": false,
       "n_estimators": {
         "values": [
           100
@@ -796,7 +796,7 @@
       "leaf_size": 30
     },
     "logistic_regression": {
-      "enabled": true,
+      "enabled": false,
       "multi_class": "multinomial",
       "penalty": {
         "values": {
@@ -1302,7 +1302,7 @@
             "None"
           ],
           "tol": [
-            1.0E-4
+            0.0001
           ]
         },
         "supportsSampleWeights": false,
@@ -1313,16 +1313,16 @@
         "pluginVersion": "0.0.1",
         "elementId": "quadratic-discr-analysis_1",
         "name": "Quadratic Discriminant Analysis",
-        "enabled": false,
+        "enabled": true,
         "params": {
           "solver": [
             "None"
           ],
           "reg_param": [
-            0.0
+            0
           ],
           "tol": [
-            1.0E-4
+            0.0001
           ]
         },
         "supportsSampleWeights": false,
