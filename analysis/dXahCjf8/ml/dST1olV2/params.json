@@ -1414,11 +1414,9 @@
             50,
             100
           ],
-          "learning_rate": [
-            0.02
-          ],
+          "learning_rate": [],
           "loss": [
-            "square"
+            "exponential"
           ],
           "random_state": 1337
         },
