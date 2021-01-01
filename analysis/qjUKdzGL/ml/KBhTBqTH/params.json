@@ -1430,7 +1430,7 @@
         "pluginVersion": "0.0.1",
         "elementId": "lightgbm-v2_3",
         "name": "Custom algo lightgbm-v2_3",
-        "enabled": false,
+        "enabled": true,
         "params": {
           "boosting_type": [
             "gbdt"
@@ -1515,7 +1515,8 @@
   "backendType": "PY_MEMORY",
   "maxConcurrentModelTraining": 2,
   "envSelection": {
-    "envMode": "USE_BUILTIN_MODE"
+    "envMode": "EXPLICIT_ENV",
+    "envName": "python35"
   },
   "containerSelection": {
     "containerMode": "INHERIT"
