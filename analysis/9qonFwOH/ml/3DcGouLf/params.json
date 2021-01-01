@@ -160,7 +160,7 @@
       },
       "year": {
         "generate_derivative": false,
-        "numerical_handling": "REGULAR",
+        "numerical_handling": "FLAG_PRESENCE",
         "missing_handling": "IMPUTE",
         "missing_impute_with": "MEAN",
         "impute_constant_value": 0.0,
@@ -171,7 +171,7 @@
         "role": "INPUT",
         "type": "NUMERIC",
         "state": {
-          "userModified": false,
+          "userModified": true,
           "autoModifiedByDSS": false,
           "recordedMeaning": "LongMeaning"
         },
@@ -181,7 +181,7 @@
       },
       "weekday": {
         "generate_derivative": false,
-        "numerical_handling": "REGULAR",
+        "numerical_handling": "FLAG_PRESENCE",
         "missing_handling": "IMPUTE",
         "missing_impute_with": "MEAN",
         "impute_constant_value": 0.0,
@@ -192,7 +192,7 @@
         "role": "INPUT",
         "type": "NUMERIC",
         "state": {
-          "userModified": false,
+          "userModified": true,
           "autoModifiedByDSS": false,
           "recordedMeaning": "LongMeaning"
         },
@@ -351,7 +351,7 @@
       },
       "month": {
         "generate_derivative": false,
-        "numerical_handling": "REGULAR",
+        "numerical_handling": "FLAG_PRESENCE",
         "missing_handling": "IMPUTE",
         "missing_impute_with": "MEAN",
         "impute_constant_value": 0.0,
@@ -362,7 +362,7 @@
         "role": "INPUT",
         "type": "NUMERIC",
         "state": {
-          "userModified": false,
+          "userModified": true,
           "autoModifiedByDSS": false,
           "recordedMeaning": "LongMeaning"
         },
