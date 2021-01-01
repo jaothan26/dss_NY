@@ -78,7 +78,7 @@
     "preprocessingFitSampleSeed": 1337,
     "per_feature": {
       "cluster_labels": {
-        "category_handling": "DUMMIFY",
+        "category_handling": "FLAG_PRESENCE",
         "missing_handling": "NONE",
         "missing_impute_with": "MODE",
         "dummy_clip": "MAX_NB_CATEGORIES",
@@ -91,7 +91,7 @@
         "role": "INPUT",
         "type": "CATEGORY",
         "state": {
-          "userModified": false,
+          "userModified": true,
           "autoModifiedByDSS": false,
           "recordedMeaning": "Text"
         },
@@ -126,7 +126,7 @@
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
-        "role": "REJECT",
+        "role": "INPUT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
@@ -160,11 +160,11 @@
       },
       "year": {
         "generate_derivative": false,
-        "numerical_handling": "FLAG_PRESENCE",
+        "numerical_handling": "REGULAR",
         "missing_handling": "IMPUTE",
         "missing_impute_with": "MEAN",
         "impute_constant_value": 0.0,
-        "rescaling": "AVGSTD",
+        "rescaling": "NONE",
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
@@ -181,11 +181,11 @@
       },
       "weekday": {
         "generate_derivative": false,
-        "numerical_handling": "FLAG_PRESENCE",
+        "numerical_handling": "REGULAR",
         "missing_handling": "IMPUTE",
         "missing_impute_with": "MEAN",
         "impute_constant_value": 0.0,
-        "rescaling": "AVGSTD",
+        "rescaling": "NONE",
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
@@ -249,14 +249,14 @@
         "missing_handling": "IMPUTE",
         "missing_impute_with": "MEAN",
         "impute_constant_value": 0.0,
-        "rescaling": "AVGSTD",
+        "rescaling": "NONE",
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
-        "role": "REJECT",
+        "role": "INPUT",
         "type": "NUMERIC",
         "state": {
-          "userModified": false,
+          "userModified": true,
           "autoModifiedByDSS": false,
           "recordedMeaning": "LongMeaning"
         },
@@ -274,7 +274,7 @@
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
-        "role": "REJECT",
+        "role": "INPUT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
@@ -316,7 +316,7 @@
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
-        "role": "REJECT",
+        "role": "INPUT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
@@ -351,11 +351,11 @@
       },
       "month": {
         "generate_derivative": false,
-        "numerical_handling": "FLAG_PRESENCE",
+        "numerical_handling": "REGULAR",
         "missing_handling": "IMPUTE",
         "missing_impute_with": "MEAN",
         "impute_constant_value": 0.0,
-        "rescaling": "AVGSTD",
+        "rescaling": "NONE",
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
@@ -380,7 +380,7 @@
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
-        "role": "REJECT",
+        "role": "INPUT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
