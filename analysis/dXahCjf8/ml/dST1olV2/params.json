@@ -1414,7 +1414,9 @@
             50,
             100
           ],
-          "learning_rate": [],
+          "learning_rate": [
+            0.02
+          ],
           "loss": [
             "square"
           ],
@@ -1495,9 +1497,9 @@
       "stratified": true,
       "strategy": "GRID",
       "randomized": true,
-      "nIter": 40,
+      "nIter": 0,
       "timeout": 0,
-      "nJobs": 4
+      "nJobs": -1
     },
     "metrics": {
       "evaluationMetric": "R2",
