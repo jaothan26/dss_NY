@@ -484,7 +484,7 @@
   "modeling": {
     "skipExpensiveReports": false,
     "random_forest_regression": {
-      "enabled": true,
+      "enabled": false,
       "n_estimators": {
         "values": [
           100
@@ -774,7 +774,7 @@
         "nValues": 0,
         "gridMode": "EXPLICIT"
       },
-      "enabled": true
+      "enabled": false
     },
     "lasso_regression": {
       "alphaMode": "AUTO_CV",
@@ -1430,7 +1430,7 @@
         "pluginVersion": "0.0.1",
         "elementId": "lightgbm-v2_3",
         "name": "Custom algo lightgbm-v2_3",
-        "enabled": false,
+        "enabled": true,
         "params": {
           "boosting_type": [
             "gbdt"
