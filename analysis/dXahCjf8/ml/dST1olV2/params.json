@@ -147,7 +147,7 @@
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
@@ -1414,11 +1414,9 @@
             50,
             100
           ],
-          "learning_rate": [
-            0.2
-          ],
+          "learning_rate": [],
           "loss": [
-            "linear"
+            "square"
           ],
           "random_state": 1337
         },
@@ -1497,7 +1495,7 @@
       "stratified": true,
       "strategy": "GRID",
       "randomized": true,
-      "nIter": 0,
+      "nIter": 40,
       "timeout": 0,
       "nJobs": 4
     },
