@@ -1408,7 +1408,7 @@
         "pluginVersion": "0.0.1",
         "elementId": "adaboost-regressor_1",
         "name": "Custom algo adaboost-regressor_1",
-        "enabled": false,
+        "enabled": true,
         "params": {
           "n_estimators": [
             50,
