@@ -1460,6 +1460,20 @@
         },
         "supportsSampleWeights": false,
         "acceptsSparseMatrix": false
+      },
+      "CustomPyPredAlgo_linear-svc_linear-svc_1": {
+        "pluginId": "linear-svc",
+        "pluginVersion": "0.0.1",
+        "elementId": "linear-svc_1",
+        "name": "Custom algo linear-svc_1",
+        "enabled": false,
+        "params": {
+          "penalty": [
+            "l2"
+          ]
+        },
+        "supportsSampleWeights": false,
+        "acceptsSparseMatrix": false
       }
     },
     "keras": {
